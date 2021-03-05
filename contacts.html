@@ -2,9 +2,79 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Contacts</title>
+
+    <style>
+        #map {
+            height: 400px;
+            width: 100%;
+        }
+    </style>
+
+    <script>
+        function initMap() {
+            const uluru = {lat: 51.516466, lng: -0.1555831};
+            const map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 15,
+                center: uluru,
+            });
+            const marker = new google.maps.Marker({
+                position: uluru,
+                map: map,
+            });
+        }
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4oeAJdsoSBc648LcNPU6AzOOtNBAXJGw&callback=initMap&libraries=&v=weekly"
+            async></script>
 </head>
 <body>
+<header>
+    <img src="null" width="170" height="170" alt="Brendle logo"/>
+    <a href="about.html">About us</a>
+    <a href="contacts.html">Contacts</a>
+    <a href="collections.html">Collections</a>
+    <a href="catalogue.html">Catalogue</a>
+    <div>
+        <img src="null" width="70" height="70" alt=""/>
+        <span><!--orders count--></span>
+    </div>
+</header>
 
+<a href="main.html">Home/</a><span>Contacts</span>
+
+<p>Need to contact us?</p>
+<span>Then fill the form below  and we will reply to your message in a day</span>
+
+<form>
+    <input type="email" placeholder="Your E-Mail Address"/>
+    <input type="text" placeholder="Full Name"/>
+    <textarea placeholder="Your Message"></textarea>
+
+    <input type="submit" value="Contact"/>
+</form>
+
+<h4>Our location</h4>
+<span>Our manufacture is located at 15 Portman Square, Marylebone, London W1H 6LJ, UK</span>
+
+<div id="map"></div>
+
+<footer>
+    <div><img src="null" width="170" height="170" alt="Brendle logo"/>
+        <a href="about.html">About us</a>
+        <a href="contacts.html">Contacts</a>
+        <a href="collections.html">Collections</a>
+        <a href="catalogue.html">Catalogue</a>
+        <div>
+            <img src="null" width="70" height="70" alt=""/>
+            <span><!--orders count--></span>
+        </div>
+    </div>
+    <div>
+        <img src="null" width="70" height="70" alt=""/>
+        <img src="null" width="70" height="70" alt=""/>
+        <img src="null" width="70" height="70" alt=""/>
+    </div>
+</footer>
 </body>
 </html>
