@@ -2,128 +2,155 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Home</title>
+    <title>Home </title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style/index.css"/>
+    <link rel="stylesheet" href="style/main.css"/>
 </head>
 <body>
 <header>
-    <img src="null" width="170" height="170" alt="Brendle logo"/>
-    <a href="about.html">About us</a>
-    <a href="contacts.html">Contacts</a>
-    <a href="collections.html">Collections</a>
-    <a href="catalogue.html">Catalogue</a>
-    <a href="bag.html">
-        <img src="null" width="70" height="70" alt=""/>
+    <img src="icon/logo.svg" width="170" height="170" alt="Brendle logo"/>
+    <div class="ml-3 mr-3">
+        <a href="about.html">About us</a>
+        <a class="ml-5" href="contacts.html">Contacts</a>
+        <a class="ml-5" href="collections.html">Collections</a>
+        <a class="ml-5" href="catalogue.html">Catalogue</a>
+    </div>
+    <a class="bag" href="bag.html">
+        <img src="icon/shopping-bag.svg" width="70" height="70" alt=""/>
         <span><!--orders count--></span>
     </a>
 </header>
 
-<div> <!--Background image-->
+<div class="news-container"> <!--Background image-->
     <div> <!--Background color-->
         <h2><b>Newest Collection</b> SOFT</h2>
-        <p>
+        <p class="mb-6">
             Explore a new world of soft aromas from our collection SOFT filled with cotton, sea salt, mint and leaves.
             Relax with the help of candles that will create the best atmosphere in your house
         </p>
-        <a href="collections.html">See Collection</a>
+        <br/>
+        <a class="btn btn-outlined" href="collections.html">See Collection</a>
     </div>
 </div>
 
 <h1>Our Collections</h1>
-<div>
-    <div>
-        <h3>One Wicked Candles</h3>
-        <h3>Soft</h3>
-        <p>
+<div class="collections">
+    <div class="description-container soft">
+        <h3 class="my-0">One Wicked Candles</h3>
+        <h3 class="mt-0 font-light">Soft</h3>
+        <p class="mb-5">
             Explore a new world of soft aromas from our collection SOFT filled with cotton, sea salt, mint and leaves.
             Relax with the help of candles that will create the best atmosphere in your house
         </p>
-        <a href="collections.html">See Collection</a>
+        <a class="btn btn-outlined" href="collections.html">See Collection</a>
     </div>
-    <img src="null" width="700" height="450" alt="Soft collection"/>
-</div>
-<div>
-    <img src="null" width="470" height="450" alt="White collection"/>
-    <div>
-        <h3>One Wicked Candles</h3>
-        <h3>White</h3>
-        <p>
-            Explore a new world of soft aromas from our collection SOFT filled with cotton, sea salt, mint and leaves.
-            Relax with the help of candles that will create the best atmosphere in your house
-        </p>
-        <a href="collections.html">See Collection</a>
-    </div>
-    <div>
-        <img src="null" width="70" height="220" alt=""/>
-        <img src="null" width="70" height="220" alt=""/>
+    <img class="collection-image"
+         src="image/home/one-wicked-candle-soft.jpg"
+         width="700"
+         height="450"
+         alt="Soft collection"/>
+
+    <img class="collection-image"
+         src="image/home/one-wicked-candle-white.jpg"
+         width="470"
+         height="450"
+         alt="White collection"/>
+    <div class="d-flex flex-row">
+        <div class="description-container white">
+            <h3 class="my-0">One Wicked Candles</h3>
+            <h3 class="mt-0 font-light">White</h3>
+            <p class="mb-5">
+                Candles from this collection will help you find a feeling of white christmas even when there is no snow around.
+                Fresh and at the same time majestic aromas will fill your house in seconds creating fantastic holiday mood
+            </p>
+            <a class="btn btn-outlined" href="collections.html">See Collection</a>
+        </div>
+
+        <div class="arrows-vertical d-flex flex-column">
+            <div class="rotate-180 background-inactive"></div>
+            <div></div>
+        </div>
     </div>
 </div>
 
 <h1>Popular Products</h1>
-<div><!--Cards-->
-    <div><!--One card-->
-        <img src="null" width="270" height="320" alt="White Strawberry candle"/>
+<div class="products-grid-4 mt-5"><!--Cards-->
+    <div class="product-card"><!--One card-->
+        <img class="mb-2" src="image/candles/white-strawberry.jpg" alt="White Strawberry candle"/>
         <b>WHITE STRAWBERRY</b>
-        <p>WHITE</p>
-        <div>
-            <p>£24.00</p>
-            <p><!--sale price--></p>
+        <p class="font-light mt-0">White</p>
+        <div class="d-flex mt-4">
+            <b class="font-size-24">£24.00</b>
+            <span class="sale-price"><!--sale price--></span>
         </div>
-        <div>
-            <img src="null" width="40" height="40" alt=""/>
-            <span>1</span>
-            <img src="null" width="40" height="40" alt=""/>
-            <button type="button">ADD</button>
+        <div class="count-container d-flex mt-5">
+            <div class="d-flex w-100 thin-border">
+                <img class="my-auto mx-1 rotate-180" src="icon/count-arrow-horizontal.svg" alt/>
+                <p>1</p>
+                <img class="my-auto mx-1" src="icon/count-arrow-horizontal.svg" alt/>
+            </div>
+            <button class="btn thin-border" type="button">ADD</button>
         </div>
     </div>
-    <div><!--One card-->
-        <img src="null" width="270" height="320" alt="Appalechia candle"/>
+    <div class="product-card"><!--One card-->
+        <img class="mb-2" src="image/candles/appalechia.jpg" alt="Appalechia candle"/>
         <b>Appalechia</b>
-        <p>Calm</p>
-        <div>
-            <p>£24.00</p>
-            <p><!--sale price--></p>
+        <p class="font-light mt-0">Calm</p>
+        <div class="d-flex mt-4">
+            <b class="font-size-24">£24.00</b>
+            <span class="sale-price"><!--sale price--></span>
         </div>
-        <div>
-            <img src="null" width="40" height="40" alt=""/>
-            <span>1</span>
-            <img src="null" width="40" height="40" alt=""/>
-            <button type="button">ADD</button>
+        <div class="count-container d-flex mt-5">
+            <div class="d-flex w-100 thin-border">
+                <img class="my-auto mx-1 rotate-180" src="icon/count-arrow-horizontal.svg" alt/>
+                <p>1</p>
+                <img class="my-auto mx-1" src="icon/count-arrow-horizontal.svg" alt/>
+            </div>
+            <button class="btn thin-border" type="button">ADD</button>
         </div>
     </div>
-    <div><!--One card-->
-        <img src="null" width="270" height="320" alt="Pine Forest candle"/>
+    <div class="product-card"><!--One card-->
+        <img class="mb-2" src="image/candles/pine-forrest.jpg" alt="Pine Forest candle"/>
         <b>Pine Forest</b>
-        <p>Calm</p>
-        <div>
-            <p>£24.00</p>
-            <p><!--sale price--></p>
+        <p class="font-light mt-0">Calm</p>
+        <div class="d-flex mt-4">
+            <b class="font-size-24">£24.00</b>
+            <span class="sale-price"><!--sale price--></span>
         </div>
-        <div>
-            <img src="null" width="40" height="40" alt=""/>
-            <span>1</span>
-            <img src="null" width="40" height="40" alt=""/>
-            <button type="button">ADD</button>
+        <div class="count-container d-flex mt-5">
+            <div class="d-flex w-100 thin-border">
+                <img class="my-auto mx-1 rotate-180" src="icon/count-arrow-horizontal.svg" alt/>
+                <p>1</p>
+                <img class="my-auto mx-1" src="icon/count-arrow-horizontal.svg" alt/>
+            </div>
+            <button class="btn thin-border" type="button">ADD</button>
         </div>
     </div>
-    <div><!--One card-->
-        <img src="null" width="270" height="320" alt="Snowy Morning candle"/>
+    <div class="product-card"><!--One card-->
+        <img class="mb-2" src="image/candles/showy-morning.jpg" alt="Snowy Morning candle"/>
         <b>Snowy Morning</b>
-        <p>WHITE</p>
-        <div>
-            <p>£24.00</p>
-            <p>£29.99</p>
+        <p class="font-light mt-0">White</p>
+        <div class="d-flex mt-4">
+            <b class="font-size-24">£24.00</b>
+            <span class="sale-price">£29.99</span>
         </div>
-        <div>
-            <img src="null" width="40" height="40" alt=""/>
-            <span>1</span>
-            <img src="null" width="40" height="40" alt=""/>
-            <button type="button">ADD</button>
+        <div class="count-container d-flex mt-5">
+            <div class="d-flex w-100 thin-border">
+                <img class="my-auto mx-1 rotate-180" src="icon/count-arrow-horizontal.svg" alt/>
+                <p>1</p>
+                <img class="my-auto mx-1" src="icon/count-arrow-horizontal.svg" alt/>
+            </div>
+            <button class="btn thin-border" type="button">ADD</button>
         </div>
     </div>
 </div>
-<div>
-    <img src="null" width="220" height="70" alt=""/>
-    <img src="null" width="220" height="70" alt=""/>
+<div class="arrows-horizontal">
+    <div class="rotate-180 background-inactive"></div>
+    <div></div>
 </div>
 
 <h1>Our Instagram</h1>

@@ -1,0 +1,144 @@
+
+.news-container {
+	background: #00f url(../image/home/home-big.jpg); /*ToDo define color*/
+	background-size: cover;
+	height: 37.5rem;
+}
+
+.news-container > div {
+	height: 600px;
+	margin: 0 var(--padding-horizontal);
+	padding: 7.5rem 0 5rem;
+	width: 35.625rem;
+	text-align: center;
+	background: var(--primary-color);
+	opacity: 0.9;
+}
+
+.news-container > div > p {
+	width: 23.125rem;
+	padding: 0 6.25rem;
+	text-align: left;
+	line-height: 1.875rem;
+}
+
+.news-container img {
+	visibility: hidden;
+}
+
+
+h1 {
+	margin-top: 6.25rem;
+}
+
+
+.collections {
+	display: grid;
+	grid-template-columns: 29.375rem 43.75rem;
+	grid-template-rows: 28.125rem;
+	margin: 0 var(--padding-horizontal);
+}
+
+.collections .soft {
+	background-color: #EBE9E4;
+}
+
+.collections .white {
+	background-color: var(--primary-main-color);
+}
+
+.collections .description-container {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.collections .description-container h3 {
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.collections .description-container h3:first-child {
+	color: var(--secondary-text-color);
+}
+
+.collections .description-container p {
+	width: 16.875rem;
+	line-height: 1.41rem;
+	margin: 0 auto;
+}
+
+.collections .arrows-vertical div {
+	background-color: var(--secondary-text-color);
+	-webkit-mask: url(../icon/page-arrow-vertical.svg) no-repeat center;
+	mask: url(../icon/page-arrow-vertical.svg) no-repeat center;
+	width: 4.375rem;
+	height: 100%;
+}
+
+.collections .collection-image {
+	width: 100%;
+	height: 100%;
+}
+
+
+.products-grid-4 {
+	display: grid;
+	grid-auto-columns: 1fr 1fr 1fr 1fr;
+	grid-auto-flow: column;
+	padding: 0 var(--padding-horizontal);
+}
+
+
+.product-card {
+	width: 16.875rem;
+}
+
+.product-card > img:first-child {
+	width: 16.875rem;
+	height: 20rem;
+}
+
+.product-card > b:first-of-type {
+	font-size: 1.125rem;
+	line-height: 1.375rem;
+	text-transform: uppercase;
+}
+
+.product-card .sale-price {
+	width: 100%;
+	text-decoration-line: line-through;
+	font-size: 1.125rem;
+	color: var(--secondary-bold-color);
+	text-align: end;
+	align-self: flex-end;
+}
+
+.product-card .count-container {
+	height: 3.125rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.product-card .count-container img {
+	height: 1.25rem;
+}
+
+.product-card .count-container p {
+	width: 100%;
+	text-align: center;
+	font-size: 1.5rem;
+	font-weight: 500;
+	line-height: 1.875rem;
+	margin: auto 0;
+}
+
+.product-card .count-container button {
+	width: 4.375rem;
+	font-family: Montserrat, sans-serif;
+	font-size: 1.125rem;
+	background: transparent;
+}
