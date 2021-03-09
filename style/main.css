@@ -86,7 +86,7 @@ h1 {
 
 .products-grid-4 {
 	display: grid;
-	grid-auto-columns: 1fr 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr 16.875rem;
 	grid-auto-flow: column;
 	padding: 0 var(--padding-horizontal);
 }
