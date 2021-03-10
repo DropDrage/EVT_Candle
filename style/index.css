@@ -58,29 +58,47 @@ a {
 }
 
 
-header {
+.header {
 	display: flex;
 	padding: 0.625rem var(--padding-horizontal) 1.25rem;
 	align-items: center;
 	background-color: var(--primary-main-color);
 }
 
-header > div:first-child {
+.header > div:first-child {
 	align-items: center;
 	justify-content: normal;
 }
 
-header > div:first-child > a {
+.header > div:first-child > a {
 	flex: 1 150px;
 	overflow: hidden;
 	white-space: nowrap;
 }
 
-header .bag {
+.header .bag {
 	margin-left: auto;
 }
 
 
+footer {
+	margin-top: 6.25rem !important;
+	background-color: var(--primary-main-color);
+	padding-top: 3.125rem;
+	padding-bottom: 3.75rem;
+}
+
+footer .share {
+	display: flex;
+	justify-content: center;
+}
+
+footer .share > img:not(:first-child) {
+	margin-left: 5rem;
+}
+
+
+/*Margin 5 = 50px converted to rem*/
 .mt-0, .my-0 {
 	margin-top: 0 !important;
 }
@@ -99,6 +117,10 @@ header .bag {
 
 .mt-6 {
 	margin-top: 3.75rem !important;
+}
+
+.mt-10 {
+	margin-top: 6.25rem !important;
 }
 
 .mt-auto, .my-auto {
@@ -229,6 +251,7 @@ header .bag {
 	-webkit-mask: url(../icon/page-arrow-horizontal.svg) no-repeat center;
 	mask: url(../icon/page-arrow-horizontal.svg) no-repeat center;
 	mask-position: right;
+	-webkit-mask-position: right;
 	margin-right: -2.125rem;
 	width: 100%;
 	height: 4.375rem;
@@ -236,4 +259,46 @@ header .bag {
 
 .arrows-horizontal .rotate-180 {
 	margin-left: -2.125rem;
+}
+
+
+/*Candles backgrounds*/
+.candle-in-hands {
+	background-color: #59503E;
+}
+
+.white-strawberry {
+	background-color: #89878C;
+}
+
+.appalechia {
+	background-color: #686F73;
+}
+
+.pine-forrest {
+	background-color: #D9D9D9;
+}
+
+.showy-morning {
+	background-color: #A69F92;
+}
+
+.cinnamon-nuts {
+	background-color: #A67D65;
+}
+
+.french-cotton {
+	background-color: #D8D9D7;
+}
+
+.green-apple {
+	background-color: #BDBF75;
+}
+
+.mandarin {
+	background-color: #F2A057;
+}
+
+.rose-white-musk {
+	background-color: #848C8C;
 }

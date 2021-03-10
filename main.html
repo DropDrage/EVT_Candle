@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="style/main.css"/>
 </head>
 <body>
-<header>
+<header class="header">
     <img src="icon/logo.svg" width="170" height="170" alt="Brendle logo"/>
     <div class="ml-3 mr-3">
         <a href="about.html">About us</a>
@@ -48,13 +48,13 @@
         </p>
         <a class="btn btn-outlined" href="collections.html">See Collection</a>
     </div>
-    <img class="collection-image"
+    <img class="collection-image one-wicked-candle-soft"
          src="image/home/one-wicked-candle-soft.jpg"
          width="700"
          height="450"
          alt="Soft collection"/>
 
-    <img class="collection-image"
+    <img class="collection-image one-wicked-candle-white"
          src="image/home/one-wicked-candle-white.jpg"
          width="470"
          height="450"
@@ -80,7 +80,7 @@
 <h1>Popular Products</h1>
 <div class="products-grid-4 mt-5"><!--Cards-->
     <div class="product-card"><!--One card-->
-        <img class="mb-2" src="image/candles/white-strawberry.jpg" alt="White Strawberry candle"/>
+        <img class="mb-2 white-strawberry" src="image/candles/white-strawberry.jpg" alt="White Strawberry candle"/>
         <b>WHITE STRAWBERRY</b>
         <p class="font-light mt-0">White</p>
         <div class="d-flex mt-4">
@@ -97,7 +97,7 @@
         </div>
     </div>
     <div class="product-card"><!--One card-->
-        <img class="mb-2" src="image/candles/appalechia.jpg" alt="Appalechia candle"/>
+        <img class="mb-2 appalechia" src="image/candles/appalechia.jpg" alt="Appalechia candle"/>
         <b>Appalechia</b>
         <p class="font-light mt-0">Calm</p>
         <div class="d-flex mt-4">
@@ -114,7 +114,7 @@
         </div>
     </div>
     <div class="product-card"><!--One card-->
-        <img class="mb-2" src="image/candles/pine-forrest.jpg" alt="Pine Forest candle"/>
+        <img class="mb-2 pine-forrest" src="image/candles/pine-forrest.jpg" alt="Pine Forest candle"/>
         <b>Pine Forest</b>
         <p class="font-light mt-0">Calm</p>
         <div class="d-flex mt-4">
@@ -154,34 +154,52 @@
 </div>
 
 <h1>Our Instagram</h1>
-<div>
-    <img src="null" width="170" height="370" alt="Instagram middle vertical photo 1"/>
-    <img src="null" width="170" height="170" alt="Candle in hands"/>
-    <img src="null" width="170" height="170" alt="Candle on white table"/>
-    <img src="null" width="170" height="170" alt="Candles on table in room"/>
-    <img src="null" width="170" height="170" alt="Brown, black and teal candles on white table"/>
-    <img src="null" width="370" height="370" alt="Three candles in bathroom"/>
-    <img src="null" width="170" height="370" alt="Two white and one black candles on table"/>
-    <img src="null" width="170" height="170" alt="Four candles on white table with plant"/>
-    <a>About us</a>
+<div class="instagram-container">
+    <div class="instagram-grid w-100">
+        <img class="tall-first instagram-1"
+             src="image/home/instagram/image1.jpg"
+             alt="Instagram middle vertical photo 1"/>
+        <img class="candle-in-hands" src="image/home/instagram/image2.jpg" alt="Candle in hands"/>
+        <img class="instagram-3" src="image/home/instagram/image3.jpg" alt="Candle on white table"/>
+        <img class="long instagram-4" src="image/home/instagram/image4.jpg" alt="Candles on table in room"/>
+        <img class="tall-second instagram-7"
+             src="image/home/instagram/image7.jpg"
+             alt="Two white and one black candles on table"/>
+        <img class="instagram-5"
+             src="image/home/instagram/image5.jpg"
+             alt="Brown, black and teal candles on white table"/>
+        <img class="instagram-6"
+             src="image/home/instagram/image6.jpg"
+             width="170"
+             height="170"
+             alt="Three candles in bathroom"/>
+        <img class="instagram-8" src="image/home/instagram/image8.jpg"
+             width="170"
+             height="170"
+             alt="Four candles on white table with plant"/>
+
+        <a class="btn btn-outlined" href="about.html">About us</a>
+    </div>
 </div>
 
 <footer>
-    <div>
-        <img src="null" width="170" height="170" alt="Brendle logo"/>
-        <a href="about.html">About us</a>
-        <a href="contacts.html">Contacts</a>
-        <a href="collections.html">Collections</a>
-        <a href="catalogue.html">Catalogue</a>
-        <a href="bag.html">
-            <img src="null" width="70" height="70" alt=""/>
+    <div class="header">
+        <img src="icon/logo.svg" width="170" height="170" alt="Brendle logo"/>
+        <div class="ml-3 mr-3">
+            <a href="about.html">About us</a>
+            <a class="ml-5" href="contacts.html">Contacts</a>
+            <a class="ml-5" href="collections.html">Collections</a>
+            <a class="ml-5" href="catalogue.html">Catalogue</a>
+        </div>
+        <a class="bag" href="bag.html">
+            <img src="icon/shopping-bag.svg" width="70" height="70" alt=""/>
             <span><!--orders count--></span>
         </a>
     </div>
-    <div>
-        <img src="null" width="70" height="70" alt=""/>
-        <img src="null" width="70" height="70" alt=""/>
-        <img src="null" width="70" height="70" alt=""/>
+    <div class="share">
+        <img src="icon/instagram.svg" width="70" height="70" alt=""/>
+        <img src="icon/facebook.svg" width="70" height="70" alt=""/>
+        <img src="icon/twitter.svg" width="70" height="70" alt=""/>
     </div>
 </footer>
 </body>

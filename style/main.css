@@ -1,6 +1,6 @@
 
 .news-container {
-	background: #00f url(../image/home/home-big.jpg); /*ToDo define color*/
+	background: #025959 url(../image/home/home-big.jpg); /*ToDo define color*/
 	background-size: cover;
 	height: 37.5rem;
 }
@@ -141,4 +141,75 @@ h1 {
 	font-family: Montserrat, sans-serif;
 	font-size: 1.125rem;
 	background: transparent;
+}
+
+.instagram-container {
+	margin: 0 var(--padding-horizontal);
+}
+
+.instagram-grid {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	gap: 1.875rem;
+	grid-template-areas: "tall-first square1 square2 square3 tall-second square4" "tall-first square5 long long tall-second square6";
+	grid-auto-flow: column;
+}
+
+.instagram-grid img {
+	width: 100%;
+	height: 100%;
+}
+
+.instagram-grid a {
+	align-self: center;
+}
+
+.instagram-grid .tall-first {
+	grid-area: tall-first;
+}
+
+.instagram-grid .tall-second {
+	grid-area: tall-second;
+}
+
+.instagram-grid .long {
+	grid-area: long;
+}
+
+/*For background colors use adobe color https://color.adobe.com/ru/create/image*/
+.one-wicked-candle-soft {
+	background-color: #8C7A69;
+}
+
+.one-wicked-candle-white {
+	background-color: #A69F92;
+}
+
+.instagram-1 {
+	background-color: #1A3C40;
+}
+
+.instagram-3 {
+	background-color: #C7CFD9;
+}
+
+.instagram-4 {
+	background-color: #BF9A84;
+}
+
+.instagram-5 {
+	background-color: #BFA8BE;
+}
+
+.instagram-6 {
+	background-color: #8C8888;
+}
+
+.instagram-7 {
+	background-color: #403836;
+}
+
+.instagram-8 {
+	background-color: #F2F2F0;
 }
