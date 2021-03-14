@@ -6,45 +6,66 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style/index.css"/>
+    <link rel="stylesheet" href="style/catalogue.css"/>
 </head>
 <body>
-<header>
-    <img src="null" width="170" height="170" alt="Brendle logo"/>
-    <a href="about.html">About us</a>
-    <a href="contacts.html">Contacts</a>
-    <a href="collections.html">Collections</a>
-    <a href="catalogue.html">Catalogue</a>
-    <a href="bag.html">
-        <img src="null" width="70" height="70" alt=""/>
+<header class="header">
+    <a href="main.html">
+        <img src="icon/logo.svg" width="170" height="170" alt="Brendle logo"/>
+    </a>
+    <div class="ml-3 mr-3">
+        <a href="about.html">About us</a>
+        <a class="ml-5" href="contacts.html">Contacts</a>
+        <a class="ml-5" href="collections.html">Collections</a>
+        <a class="ml-5" href="catalogue.html">Catalogue</a>
+    </div>
+    <a class="bag" href="bag.html">
+        <img src="icon/shopping-bag.svg" width="70" height="70" alt=""/>
         <span><!--orders count--></span>
     </a>
 </header>
 
-<a href="main.html">Home/</a><span>Catalogue</span>
+<div class="breadcrumbs">
+    <a href="main.html">Home / </a><span>Catalogue</span>
+</div>
 
-<div>
-    <div><!--Filter-->
-        <h3>FRAGRANCE TYPE</h3>
+<div class="d-flex flex-row container-catalog">
+    <div class="filter"><!--Filter-->
+        <p class="mb-3">FRAGRANCE TYPE</p>
+        <div class="checkbox">
+            <input id="fresh-and-Clean" type="checkbox" name="Fresh and clean"/>
 
-        <input id="fresh-and-Clean" type="checkbox" name="Fresh and clean"/>
-        <label for="fresh-and-Clean">Fresh and clean (5)</label>
-        <input id="floral" type="checkbox" name="Floral"/>
-        <label for="floral">Floral (11</label>
-        <input id="citrus" type="checkbox" name="Citrus"/>
-        <label for="citrus">Citrus (12)</label>
-        <input id="fruity" type="checkbox" name="Fruity"/>
-        <label for="fruity">Fruity (15)</label>
-        <input id="woody" type="checkbox" name="Woody"/>
-        <label for="woody">Woody (7)</label>
+            <label for="fresh-and-Clean">Fresh and clean (5)</label>
+        </div>
+        <div class="checkbox">
+            <input id="floral" type="checkbox" name="Floral"/>
+            <label for="floral">Floral (11)</label>
+        </div>
+        <div class="checkbox">
+            <input id="citrus" type="checkbox" name="Citrus"/>
+            <label for="citrus">Citrus (12)</label>
+        </div>
+        <div class="checkbox">
+            <input id="fruity" type="checkbox" name="Fruity"/>
+            <label for="fruity">Fruity (15)</label></div>
+        <div class="checkbox">
+            <input id="woody" type="checkbox" name="Woody"/>
+            <label for="woody">Woody (7)</label>
+        </div>
     </div>
-    <div><!--Candles-->
-        <div class="product-card"><!--One card-->
-            <img src="null" width="270" height="320" alt="Cinnamon&Nuts candle"/>
-            <b>Cinnamon&Nuts</b>
-            <p>WHITE</p>
-            <div>
-                <p>£20.00</p>
-                <p>£24.00</p>
+
+    <div class="products-grid-3"><!--Cards-->
+        <a href="product.html" class="product-card"><!--One card-->
+            <img class="mb-2 white-strawberry" src="image/candles/cinnamon&nuts.jpg"
+                 alt="Cinnamon&Nuts candle"/>
+            <b>CINNAMON&NUTS</b>
+            <p class="font-light mt-0">White</p>
+            <div class="d-flex mt-4">
+                <b class="font-size-24">£20.00</b>
+                <span class="sale-price">£24.00</span>
             </div>
             <div class="count-container d-flex mt-5">
                 <div class="d-flex w-100 thin-border">
@@ -54,13 +75,13 @@
                 </div>
                 <button class="btn thin-border" type="button">ADD</button>
             </div>
-        </div>
-        <div class="product-card"><!--One card-->
-            <img src="null" width="270" height="320" alt="Appalechia candle"/>
-            <b>Appalechia</b>
-            <p>Calm</p>
-            <div>
-                <p>£24.00</p>
+        </a>
+        <a href="product.html" class="product-card"><!--One card-->
+            <img class="mb-2 appalechia" src="image/candles/appalechia.jpg" alt="Appalechia candle"/>
+            <b>APPALECHIA</b>
+            <p class="font-light mt-0">Calm</p>
+            <div class="d-flex mt-4">
+                <b class="font-size-24">£24.00</b>
                 <span class="sale-price"><!--sale price--></span>
             </div>
             <div class="count-container d-flex mt-5">
@@ -71,13 +92,13 @@
                 </div>
                 <button class="btn thin-border" type="button">ADD</button>
             </div>
-        </div>
-        <div class="product-card"><!--One card-->
-            <img src="null" width="270" height="320" alt="Green Apple candle"/>
-            <b>Green Apple</b>
-            <p>WHITE</p>
-            <div>
-                <p>£24.00</p>
+        </a>
+        <a href="product.html" class="product-card"><!--One card-->
+            <img class="mb-2 pine-forrest" src="image/candles/green-apple.jpg" alt="Green Apple candle"/>
+            <b>GREEN APPLE</b>
+            <p class="font-light mt-0">White</p>
+            <div class="d-flex mt-4">
+                <b class="font-size-24">£24.00</b>
                 <span class="sale-price"><!--sale price--></span>
             </div>
             <div class="count-container d-flex mt-5">
@@ -88,14 +109,14 @@
                 </div>
                 <button class="btn thin-border" type="button">ADD</button>
             </div>
-        </div>
-        <div class="product-card"><!--One card-->
-            <img src="null" width="270" height="320" alt="Pine Forest candle"/>
-            <b>Pine Forest</b>
-            <p>Calm</p>
-            <div>
-                <p>£24.00</p>
-                <span class="sale-price"><!--sale price--></span>
+        </a>
+        <a href="product.html" class="product-card"><!--One card-->
+            <img class="mb-2" src="image/candles/pine-forrest.jpg" alt="Pine Forest candle"/>
+            <b>PINE FOREST</b>
+            <p class="font-light mt-0">Calm</p>
+            <div class="d-flex mt-4">
+                <b class="font-size-24">£24.00</b>
+                <span class="sale-price">£29.99</span>
             </div>
             <div class="count-container d-flex mt-5">
                 <div class="d-flex w-100 thin-border">
@@ -105,14 +126,14 @@
                 </div>
                 <button class="btn thin-border" type="button">ADD</button>
             </div>
-        </div>
-        <div class="product-card"><!--One card-->
-            <img src="null" width="270" height="320" alt="Mandarin candle"/>
-            <b>Mandarin</b>
-            <p>WHITE</p>
-            <div>
-                <p>£24.00</p>
-                <span class="sale-price"><!--sale price--></span>
+        </a>
+        <a href="product.html" class="product-card"><!--One card-->
+            <img class="mb-2" src="image/candles/mandarin.jpg" alt="Mandarin candle"/>
+            <b>MANDARIN</b>
+            <p class="font-light mt-0">White</p>
+            <div class="d-flex mt-4">
+                <b class="font-size-24">£24.00</b>
+                <span class="sale-price"></span>
             </div>
             <div class="count-container d-flex mt-5">
                 <div class="d-flex w-100 thin-border">
@@ -122,14 +143,14 @@
                 </div>
                 <button class="btn thin-border" type="button">ADD</button>
             </div>
-        </div>
-        <div class="product-card"><!--One card-->
-            <img src="null" width="270" height="320" alt="French Cotton candle"/>
-            <b>French Cotton</b>
-            <p>WHITE</p>
-            <div>
-                <p>£24.00</p>
-                <span class="sale-price"><!--sale price--></span>
+        </a>
+        <a href="product.html" class="product-card"><!--One card-->
+            <img class="mb-2" src="image/candles/mandarin.jpg" alt="French Cotton candle"/>
+            <b>FRENCH COTTON</b>
+            <p class="font-light mt-0">Soft</p>
+            <div class="d-flex mt-4">
+                <b class="font-size-24">£24.00</b>
+                <span class="sale-price"></span>
             </div>
             <div class="count-container d-flex mt-5">
                 <div class="d-flex w-100 thin-border">
@@ -139,14 +160,14 @@
                 </div>
                 <button class="btn thin-border" type="button">ADD</button>
             </div>
-        </div>
-        <div class="product-card"><!--One card-->
-            <img src="null" width="270" height="320" alt="White Strawberry candle"/>
-            <b>White Strawberry</b>
-            <p>WHITE</p>
-            <div>
-                <p>£20.00</p>
-                <span class="sale-price"><!--sale price--></span>
+        </a>
+        <a href="product.html" class="product-card"><!--One card-->
+            <img class="mb-2" src="image/candles/white-strawberry.jpg" alt="White Strawberry candle"/>
+            <b>WHITE STRAWBERRY</b>
+            <p class="font-light mt-0">White</p>
+            <div class="d-flex mt-4">
+                <b class="font-size-24">£24.00</b>
+                <span class="sale-price"></span>
             </div>
             <div class="count-container d-flex mt-5">
                 <div class="d-flex w-100 thin-border">
@@ -156,14 +177,14 @@
                 </div>
                 <button class="btn thin-border" type="button">ADD</button>
             </div>
-        </div>
-        <div class="product-card"><!--One card-->
-            <img src="null" width="270" height="320" alt="Rose & White Musk candle"/>
-            <b>Rose & White Musk</b>
-            <p>Soft</p>
-            <div>
-                <p>£20.00</p>
-                <p>£24.00</p>
+        </a>
+        <a href="product.html" class="product-card"><!--One card-->
+            <img class="mb-2" src="image/candles/rose&white-musk.jpg" alt="Rose and musk candle"/>
+            <b>ROSE & WHITE MUSK</b>
+            <p class="font-light mt-0">Soft</p>
+            <div class="d-flex mt-4">
+                <b class="font-size-24">£24.00</b>
+                <span class="sale-price"></span>
             </div>
             <div class="count-container d-flex mt-5">
                 <div class="d-flex w-100 thin-border">
@@ -173,55 +194,59 @@
                 </div>
                 <button class="btn thin-border" type="button">ADD</button>
             </div>
-        </div>
-        <div class="product-card"><!--One card-->
-            <img src="null" width="270" height="320" alt="Snowy Morning candle"/>
-            <b>Snowy Morning</b>
-            <p>WHITE</p>
-            <div>
-                <p>£20.00</p>
-                <p>£24.00</p>
+        </a>
+        <a href="product.html" class="product-card"><!--One card-->
+            <img class="mb-2" src="image/candles/snowy-morning.jpg" alt="Snowy Morning candle"/>
+            <b>SNOWY MORNING</b>
+            <p class="font-light mt-0">White</p>
+            <div class="d-flex mt-4">
+                <b class="font-size-24">£24.00</b>
+                <span class="sale-price"></span>
             </div>
             <div class="count-container d-flex mt-5">
                 <div class="d-flex w-100 thin-border">
                     <img class="my-auto mx-1 rotate-180" src="icon/count-arrow-horizontal.svg" alt/>
-                    <p>1</p>
+                    <span>1</span>
                     <img class="my-auto mx-1" src="icon/count-arrow-horizontal.svg" alt/>
                 </div>
                 <button class="btn thin-border" type="button">ADD</button>
             </div>
-        </div>
+        </a>
     </div>
 </div>
 
-<div>
-    <img src="null" width="220" height="70" alt=""/>
-    <div><!--Pagination-->
-        <img src="null" width="20" height="20" alt=""/>
-        <img src="null" width="20" height="20" alt=""/>
-        <img src="null" width="20" height="20" alt=""/>
-        <img src="null" width="20" height="20" alt=""/>
-        <img src="null" width="20" height="20" alt=""/>
+<div class="arrows-horizontal mt-4">
+    <div class="rotate-180 background-inactive"></div>
+    <div class="d-flex">
+        <span class="page-dot orange active"></span>
+        <span class="page-dot orange"></span>
+        <span class="page-dot orange"></span>
+        <span class="page-dot orange"></span>
+        <span class="page-dot orange"></span>
     </div>
-    <img src="null" width="220" height="70" alt=""/>
+    <div></div>
 </div>
 
 <footer>
-    <div>
-        <img src="null" width="170" height="170" alt="Brendle logo"/>
-        <a href="about.html">About us</a>
-        <a href="contacts.html">Contacts</a>
-        <a href="collections.html">Collections</a>
-        <a href="catalogue.html">Catalogue</a>
-        <a href="bag.html">
-            <img src="null" width="70" height="70" alt=""/>
+    <div class="header">
+        <a href="main.html">
+            <img src="icon/logo.svg" width="170" height="170" alt="Brendle logo"/>
+        </a>
+        <div class="ml-3 mr-3">
+            <a href="about.html">About us</a>
+            <a class="ml-5" href="contacts.html">Contacts</a>
+            <a class="ml-5" href="collections.html">Collections</a>
+            <a class="ml-5" href="catalogue.html">Catalogue</a>
+        </div>
+        <a class="bag" href="bag.html">
+            <img src="icon/shopping-bag.svg" width="70" height="70" alt=""/>
             <span><!--orders count--></span>
         </a>
     </div>
-    <div>
-        <img src="null" width="70" height="70" alt=""/>
-        <img src="null" width="70" height="70" alt=""/>
-        <img src="null" width="70" height="70" alt=""/>
+    <div class="share">
+        <img src="icon/instagram.svg" width="70" height="70" alt=""/>
+        <img src="icon/facebook.svg" width="70" height="70" alt=""/>
+        <img src="icon/twitter.svg" width="70" height="70" alt=""/>
     </div>
 </footer>
 </body>

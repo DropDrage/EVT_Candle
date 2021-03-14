@@ -6,58 +6,95 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style/index.css"/>
+    <link rel="stylesheet" href="style/about.css"/>
 </head>
 <body>
-<header>
-    <img src="null" width="170" height="170" alt="Brendle logo"/>
-    <a href="about.html">About us</a>
-    <a href="contacts.html">Contacts</a>
-    <a href="collections.html">Collections</a>
-    <a href="catalogue.html">Catalogue</a>
-    <a href="bag.html">
-        <img src="null" width="70" height="70" alt=""/>
+<header class="header">
+    <a href="main.html">
+        <img src="icon/logo.svg" width="170" height="170" alt="Brendle logo"/>
+    </a>
+    <div class="ml-3 mr-3">
+        <a href="about.html">About us</a>
+        <a class="ml-5" href="contacts.html">Contacts</a>
+        <a class="ml-5" href="collections.html">Collections</a>
+        <a class="ml-5" href="catalogue.html">Catalogue</a>
+    </div>
+    <a class="bag" href="bag.html">
+        <img src="icon/shopping-bag.svg" width="70" height="70" alt=""/>
         <span><!--orders count--></span>
     </a>
 </header>
-
-<a href="main.html">Home/</a><span>About us</span>
-
-<span>
-    <b>Brendle</b> is an independent fragrance company from London founded in 2008.
-    We do our best to bring nice and healthy aromas to your home.
-</span>
-<img src="null" width="210" height="314" alt="Candle in hands"/>
-<img src="null" width="609" height="400" alt="Three Candles"/>
-<span>
-    The entire Brendle collection is <b>vegan, cruelty-free, and phthalate-free</b> — always.
-    All of our candles are made with 100% domestically-grown soy wax. While our production methods have improved over the years,
-    something that hasn't changed about Brendle products is the people behind them.  All of our products are developed,
-    produced, tested, packed, and shipped by our team out of our warehouse in London, UK.
-</span>
-
-<span>Follow us on Instagram, Facebook or Twitter to find out more about us:</span>
-<div>
-    <img src="null" width="70" height="70" alt=""/>
-    <img src="null" width="70" height="70" alt=""/>
-    <img src="null" width="70" height="70" alt=""/>
+<div class="breadcrumbs">
+    <a href="main.html">Home / </a><span>About us</span>
 </div>
 
+<div class="about">
+    <div class="top d-flex flex-column mt-5">
+        <div class="description-container">
+            <p class="mt-0 mb-6">
+                <b>Brendle</b> is an independent fragrance company from London founded in 2008.
+                We do our best to bring nice and healthy aromas to your home.
+            </p>
+        </div>
+        <img class="collection-image"
+             src="image/about/three-candles.jpg"
+             width="609"
+             height="400"
+             alt="White collection"/>
+    </div>
+
+    <div class="bottom d-flex flex-column">
+        <img class="collection-image mb-6"
+             src="image/about/candle-in-hands.jpg"
+             width="210"
+             height="314"
+             alt="Soft collection"/>
+        <div class="description-container">
+            <p class="my-0">
+                The entire Brendle collection is <b>vegan, cruelty-free, and phthalate-free</b> — always.
+                All of our candles are made with 100% domestically-grown soy wax. While our production methods have
+                improved over the years,
+                something that hasn't changed about Brendle products is the people behind them. All of our products are
+                developed,
+                produced, tested, packed, and shipped by our team out of our warehouse in London, UK.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="more w-100 mt-10">
+    <span class="font-size-24 font-light">Follow us on Instagram, Facebook or Twitter to find out more about us:</span>
+    <div class="share">
+        <img src="icon/instagram.svg" width="70" height="70" alt=""/>
+        <img src="icon/facebook.svg" width="70" height="70" alt=""/>
+        <img src="icon/twitter.svg" width="70" height="70" alt=""/>
+    </div>
+</div>
+
+
 <footer>
-    <div>
-        <img src="null" width="170" height="170" alt="Brendle logo"/>
-        <a href="about.html">About us</a>
-        <a href="contacts.html">Contacts</a>
-        <a href="collections.html">Collections</a>
-        <a href="catalogue.html">Catalogue</a>
-        <a href="bag.html">
-            <img src="null" width="70" height="70" alt=""/>
+    <div class="header">
+        <a href="main.html">
+            <img src="icon/logo.svg" width="170" height="170" alt="Brendle logo"/>
+        </a>
+        <div class="ml-3 mr-3">
+            <a href="about.html">About us</a>
+            <a class="ml-5" href="contacts.html">Contacts</a>
+            <a class="ml-5" href="collections.html">Collections</a>
+            <a class="ml-5" href="catalogue.html">Catalogue</a>
+        </div>
+        <a class="bag" href="bag.html">
+            <img src="icon/shopping-bag.svg" width="70" height="70" alt=""/>
             <span><!--orders count--></span>
         </a>
     </div>
-    <div>
-        <img src="null" width="70" height="70" alt=""/>
-        <img src="null" width="70" height="70" alt=""/>
-        <img src="null" width="70" height="70" alt=""/>
+    <div class="share">
+        <img src="icon/instagram.svg" width="70" height="70" alt=""/>
+        <img src="icon/facebook.svg" width="70" height="70" alt=""/>
+        <img src="icon/twitter.svg" width="70" height="70" alt=""/>
     </div>
 </footer>
 </body>

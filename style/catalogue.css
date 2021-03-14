@@ -1,0 +1,43 @@
+.container-catalog {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	margin: 0 var(--padding-horizontal);
+}
+
+
+.filter {
+	min-height: 25rem;
+	display: flex;
+	flex-direction: column;
+	margin-right: 3.75rem;
+	overflow: auto;
+	position: sticky;
+	width: 20rem;
+}
+
+.filter label {
+	font-size: 1.125rem;
+	line-height: 22px;
+}
+
+.filter p {
+	font-style: normal;
+	font-weight: 300;
+	font-size: 24px;
+	line-height: 29px;
+}
+
+.filter div:not(:last-child) {
+	margin-bottom: 1.25rem;
+}
+
+
+.products-grid-3 {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-auto-flow: row;
+	grid-column-gap: 1.875rem;
+	width: 100%;
+	justify-content: center;
+}

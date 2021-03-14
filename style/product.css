@@ -1,0 +1,42 @@
+.product-info-card {
+	height: 29.375rem;
+	display: grid;
+	grid-template-columns: auto 29.375rem auto 1fr;
+	grid-template-rows: 29.375rem;
+	gap: 1.875rem;
+	grid-auto-flow: column;
+}
+
+.product-info-card .specification {
+	width: 25rem;
+}
+
+.product-info-card .order-line {
+	justify-content: space-between;
+}
+
+.product-info-card .add-to-bag {
+	width: 16.25rem;
+}
+
+.product-info-card .count {
+	width: 4.375rem;
+	height: 4.375rem;
+	align-items: center;
+}
+
+.product-info-card .count > p {
+	align-items: center;
+	font-size: 1.125rem;
+	line-height: 1.375rem;
+}
+
+
+.description-row {
+	font-size: 1.125rem;
+}
+
+.description-row > span:first-child {
+	font-weight: 300;
+}
+

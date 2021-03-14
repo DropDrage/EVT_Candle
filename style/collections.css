@@ -1,0 +1,9 @@
+.collections .pagination {
+	padding-right: 1.875rem;
+	width: 1.25rem;
+	justify-content: center;
+}
+
+.collections .pagination .page-dot:not(:last-child) {
+	margin-bottom: 1.25rem;
+}

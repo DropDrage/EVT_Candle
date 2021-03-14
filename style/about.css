@@ -1,0 +1,42 @@
+.about {
+	display: grid;
+	grid-template-columns: 37.5rem 17.25rem;
+	grid-auto-rows: 25rem;
+	grid-gap: 5rem;
+	margin: 0 var(--padding-horizontal);
+	height: 40.9375rem;
+	justify-content: center;
+}
+
+.about .top {
+	width: 43.75rem;
+}
+
+.about .bottom {
+	align-items: center;
+	width: 31.25rem;
+}
+
+.about .description-container {
+	height: 100%;
+	align-items: center;
+	font-family: Source Sans Pro, sans-serif;
+}
+
+.about .description-container b {
+	font-weight: 400 !important;
+}
+
+.about .description-container p {
+	font-style: normal;
+	font-weight: 300;
+	font-size: 1.5rem;
+	line-height: 30px;
+}
+
+
+.more {
+	margin-top: 150px;
+	text-align: center;
+	font-family: Source Sans Pro, sans-serif;
+}

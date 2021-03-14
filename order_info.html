@@ -6,118 +6,152 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style/index.css"/>
+    <link rel="stylesheet" href="style/order_info.css"/>
 </head>
 <body>
-<header>
-    <img src="null" width="170" height="170" alt="Brendle logo"/>
-    <a href="about.html">About us</a>
-    <a href="contacts.html">Contacts</a>
-    <a href="collections.html">Collections</a>
-    <a href="catalogue.html">Catalogue</a>
-    <a href="bag.html">
-        <img src="null" width="70" height="70" alt=""/>
+<header class="header">
+    <a href="main.html">
+        <img src="icon/logo.svg" width="170" height="170" alt="Brendle logo"/>
+    </a>
+    <div class="ml-3 mr-3">
+        <a href="about.html">About us</a>
+        <a class="ml-5" href="contacts.html">Contacts</a>
+        <a class="ml-5" href="collections.html">Collections</a>
+        <a class="ml-5" href="catalogue.html">Catalogue</a>
+    </div>
+    <a class="bag" href="bag.html">
+        <img src="icon/shopping-bag.svg" width="70" height="70" alt=""/>
         <span>3</span>
     </a>
 </header>
+<div class="breadcrumbs">
+    <a href="main.html">Home / </a><a href="catalogue.html">Catalogue / </a><span>Bag</span>
+</div>
 
-<a href="main.html">Home/</a><a href="catalogue.html">Catalogue/</a><span>Bag</span>
-
-<form>
-    <div>
-        <h3>CONTACT INFORMATION</h3>
+<form class="px-horizontal">
+    <div class="mb-7">
         <div>
-            <label for="first-name">First Name</label>
-            <input id="first-name" type="text" name="firstName"/>
-            <label for="last-name">Last Name</label>
-            <input id="last-name" type="text" name="lastName"/>
+            <h3 class="font-light mb-4">CONTACT INFORMATION</h3>
+            <div class="contact-information">
+                <div class="material-input">
+                    <input id="first-name" type="text" name="firstName"/>
+                    <label for="first-name" data-placeholder="First Name"></label>
+                </div>
+                <div class="material-input">
+                    <input id="last-name" type="text" name="lastName"/>
+                    <label for="last-name" data-placeholder="Last Name"></label>
+                </div>
 
-            <label for="email">Email</label>
-            <input id="email" type="text" name="email"/>
-            <label for="phone">Phone</label>
-            <input id="phone" type="text" name="phone"/>
+                <div class="material-input">
+                    <input id="email" type="text" name="email"/>
+                    <label for="email" data-placeholder="Email"></label>
+                </div>
+                <div class="material-input">
+                    <input id="phone" type="text" name="phone"/>
+                    <label for="phone" data-placeholder="Phone"></label>
+                </div>
 
-            <label for="country">Country</label>
-            <input id="country" type="text" name="country"/>
-            <label for="city">City</label>
-            <input id="city" type="text" name="city"/>
+                <div class="material-input">
+                    <input id="country" type="text" name="country"/>
+                    <label for="country" data-placeholder="Country"></label>
+                </div>
+                <div class="material-input">
+                    <input id="city" type="text" name="city"/>
+                    <label for="city" data-placeholder="City"></label>
+                </div>
 
-            <label for="address">Address</label>
-            <input id="address" type="text" name="address"/>
-            <label for="zipcode">Zipcode</label>
-            <input id="zipcode" type="text" name="zipcode"/>
+                <div class="material-input">
+                    <input id="address" type="text" name="address"/>
+                    <label for="address" data-placeholder="Address"></label>
+                </div>
+                <div class="material-input">
+                    <input id="zipcode" type="text" name="zipcode"/>
+                    <label for="zipcode" data-placeholder="Zipcode"></label>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h3 class="font-light mb-4">ORDER INFORMATION</h3>
+            <a href="product.html" class="ordered-product mb-3">
+                <img src="image/candles/snowy-morning.jpg"
+                     alt="White Strawberry candle miniature"/>
+                <div class="label">
+                    <h4>White Strawberry (2)</h4>
+                    <h4 class="font-light">White</h4>
+                </div>
+                <div class="price">
+                    <h4>£40.00</h4>
+                    <h5 class="sale-price">£48.00</h5>
+                </div>
+            </a>
+            <a href="product.html" class="ordered-product mb-3">
+                <img src="image/candles/green-apple.jpg" alt="Green Apple candle miniature"/>
+                <div class="label">
+                    <h4>Green Apple</h4>
+                    <h4 class="font-light">White</h4>
+                </div>
+                <div class="price">
+                    <h4>£24.00</h4>
+                    <h5 class="sale-price"><!--sale price--></h5>
+                </div>
+            </a>
+            <a href="product.html" class="ordered-product mb-3">
+                <img src="image/candles/mandarin.jpg" alt="Mandarin candle miniature"/>
+                <div class="label">
+                    <h4>Mandarin</h4>
+                    <h4 class="font-light">White</h4>
+                </div>
+                <div class="price">
+                    <h4>£24.00</h4>
+                    <h5 class="sale-price"><!--sale price--></h5>
+                </div>
+            </a>
+
+            <hr class="mb-2"/>
+
+            <div class="d-flex mb-2">
+                <p class="w-100 font-light">Subtotal: </p>
+                <p class="font-bold text-color-secondary">£88.00</p>
+            </div>
+            <div class="d-flex mb-2">
+                <p class="w-100 font-light">Shipping: </p>
+                <p class="font-bold text-color-secondary">£8.00</p>
+            </div>
+
+            <hr class="mb-3"/>
+
+            <div class="d-flex">
+                <h3 class="w-100 text-uppercase font-light my-0">Total: </h3>
+                <h3 class="font-bold my-0">£96.00</h3>
+            </div>
         </div>
     </div>
-    <div>
-        <h3>ORDER INFORMATION</h3>
-        <div>
-            <img src="null" width="70" height="70" alt="White Strawberry candle miniature"/>
-            <div>
-                <h3>White Strawberry (2)</h3>
-                <h3>White</h3>
-            </div>
-            <div>
-                <p>£40.00</p>
-                <p>£48.00</p>
-            </div>
-        </div>
-        <div>
-            <img src="null" width="70" height="70" alt="Green Apple candle miniature"/>
-            <div>
-                <h3>Green Apple</h3>
-                <h3>White</h3>
-            </div>
-            <div>
-                <p>£24.00</p>
-                <span class="sale-price"><!--sale price--></span>
-            </div>
-        </div>
-        <div>
-            <img src="null" width="70" height="70" alt="Mandarin candle miniature"/>
-            <div>
-                <h3>Mandarin</h3>
-                <h3>White</h3>
-            </div>
-            <div>
-                <p>£24.00</p>
-                <span class="sale-price"><!--sale price--></span>
-            </div>
-        </div>
 
-        <hr/>
-
-        <div>
-            <span>Subtotal: </span><span>£88.00</span>
-        </div>
-        <div>
-            <span>Shipping: </span><span>£8.00</span>
-        </div>
-
-        <hr/>
-
-        <div>
-            <span>Total: </span><span>£96.00</span>
-        </div>
-    </div>
-
-    <input type="submit" value="Continue"/>
+    <input class="btn btn-outlined disabled d-block mx-auto" type="submit" value="Continue"/>
 </form>
 
 <footer>
-    <div>
-        <img src="null" width="170" height="170" alt="Brendle logo"/>
-        <a href="about.html">About us</a>
-        <a href="contacts.html">Contacts</a>
-        <a href="collections.html">Collections</a>
-        <a href="catalogue.html">Catalogue</a>
-        <a href="bag.html">
-            <img src="null" width="70" height="70" alt=""/>
+    <div class="header">
+        <a href="main.html">
+            <img src="icon/logo.svg" width="170" height="170" alt="Brendle logo"/>
+        </a>
+        <div class="ml-3 mr-3">
+            <a href="about.html">About us</a>
+            <a class="ml-5" href="contacts.html">Contacts</a>
+            <a class="ml-5" href="collections.html">Collections</a>
+            <a class="ml-5" href="catalogue.html">Catalogue</a>
+        </div>
+        <a class="bag" href="bag.html">
+            <img src="icon/shopping-bag.svg" width="70" height="70" alt=""/>
             <span>3</span>
         </a>
     </div>
-    <div>
-        <img src="null" width="70" height="70" alt="Instagram share"/>
-        <img src="null" width="70" height="70" alt="Facebook share"/>
-        <img src="null" width="70" height="70" alt="Twitter share"/>
+    <div class="share">
+        <img src="icon/instagram.svg" width="70" height="70" alt=""/>
+        <img src="icon/facebook.svg" width="70" height="70" alt=""/>
+        <img src="icon/twitter.svg" width="70" height="70" alt=""/>
     </div>
 </footer>
 </body>

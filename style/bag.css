@@ -1,0 +1,78 @@
+.bag-cards > .bag-card:not(:last-child) {
+	margin-bottom: 3.125rem;
+}
+
+.bag-card {
+	display: grid;
+	grid-template-columns: 12.5rem 3fr 12.5rem 1fr auto;
+	grid-template-rows: 12.5rem;
+	grid-row-gap: 3.125rem;
+	align-items: center;
+}
+
+.bag-card .titles {
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	margin-left: 4.375rem;
+}
+
+.bag-card .titles > h3 {
+	text-transform: uppercase;
+	margin: 0;
+}
+
+.bag-card .price {
+	display: flex;
+	flex-direction: column;
+	text-align: right;
+}
+
+.count {
+	display: flex;
+	width: 100%;
+}
+
+.count span {
+	width: 100%;
+	text-align: center;
+	font-size: 1.5rem;
+	font-weight: 500;
+	line-height: 1.875rem;
+	margin: auto 0;
+}
+
+
+.result {
+	display: grid;
+	grid-template-columns: 12.5rem 3fr 12.5rem 1fr auto;
+}
+
+.result > div:last-child {
+	text-align: right;
+}
+
+.result > div > span:first-child {
+	font-weight: 300;
+}
+
+
+button[name="Continue"] {
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+	font-family: Montserrat, sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 24px;
+	line-height: 29px;
+	text-align: center;
+	letter-spacing: 0.1em;
+}
+
+.continue {
+	margin: 101px 0;
+	display: flex;
+	width: 100%;
+	justify-content: center;
+}

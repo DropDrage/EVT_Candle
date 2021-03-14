@@ -6,13 +6,10 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
 
-    <style>
-        .map {
-            height: 400px;
-            width: 100%;
-        }
-    </style>
+    <link rel="stylesheet" href="style/index.css"/>
+    <link rel="stylesheet" href="style/contacts.css"/>
 
     <script>
         function initMap() {
@@ -32,52 +29,65 @@
             async></script>
 </head>
 <body>
-<header>
-    <img src="null" width="170" height="170" alt="Brendle logo"/>
-    <a href="about.html">About us</a>
-    <a href="contacts.html">Contacts</a>
-    <a href="collections.html">Collections</a>
-    <a href="catalogue.html">Catalogue</a>
-    <a href="bag.html">
-        <img src="null" width="70" height="70" alt=""/>
+<header class="header">
+    <a href="main.html">
+        <img src="icon/logo.svg" width="170" height="170" alt="Brendle logo"/>
+    </a>
+    <div class="ml-3 mr-3">
+        <a href="about.html">About us</a>
+        <a class="ml-5" href="contacts.html">Contacts</a>
+        <a class="ml-5" href="collections.html">Collections</a>
+        <a class="ml-5" href="catalogue.html">Catalogue</a>
+    </div>
+    <a class="bag" href="bag.html">
+        <img src="icon/shopping-bag.svg" width="70" height="70" alt=""/>
         <span><!--orders count--></span>
     </a>
 </header>
 
-<a href="main.html">Home/</a><span>Contacts</span>
+<div class="breadcrumbs">
+    <a href="main.html">Home / </a><span>Contacts</span>
+</div>
+<div class="title text-center mb-3">
+    <p class="font-size-24 my-0">Need to contact us?</p>
+    <span class="font-size-24 font-light">Then fill the form below  and we will reply to your message in a day</span>
+</div>
 
-<p>Need to contact us?</p>
-<span>Then fill the form below  and we will reply to your message in a day</span>
+<form class="form-feedback">
+    <input class="mb-2" type="email" placeholder="Your E-Mail Address" name="email"/>
+    <input class="mb-2" type="text" placeholder="Full Name" name="fullName"/>
+    <textarea class="mb-2" placeholder="Your Message" name="message"></textarea>
 
-<form>
-    <input type="email" placeholder="Your E-Mail Address" name="email"/>
-    <input type="text" placeholder="Full Name" name="fullName"/>
-    <textarea placeholder="Your Message" name="message"></textarea>
-
-    <input type="submit" value="Contact"/>
+    <input class="btn btn-outlined" type="submit" value="Contact"/>
 </form>
 
-<h4>Our location</h4>
-<span>Our manufacture is located at 15 Portman Square, Marylebone, London W1H 6LJ, UK</span>
+<div class="location mt-10 mb-3">
+    <h3 class="mb-4 text-uppercase">Our location</h3>
+    <span>Our manufacture is located at 15 Portman Square, Marylebone, London W1H 6LJ, UK</span>
+</div>
 
 <div id="map" class="map"></div>
 
-<footer>
-    <div>
-        <img src="null" width="170" height="170" alt="Brendle logo"/>
-        <a href="about.html">About us</a>
-        <a href="contacts.html">Contacts</a>
-        <a href="collections.html">Collections</a>
-        <a href="catalogue.html">Catalogue</a>
-        <a href="bag.html">
-            <img src="null" width="70" height="70" alt=""/>
+<footer class="mt-0">
+    <div class="header">
+        <a href="main.html">
+            <img src="icon/logo.svg" width="170" height="170" alt="Brendle logo"/>
+        </a>
+        <div class="ml-3 mr-3">
+            <a href="about.html">About us</a>
+            <a class="ml-5" href="contacts.html">Contacts</a>
+            <a class="ml-5" href="collections.html">Collections</a>
+            <a class="ml-5" href="catalogue.html">Catalogue</a>
+        </div>
+        <a class="bag" href="bag.html">
+            <img src="icon/shopping-bag.svg" width="70" height="70" alt=""/>
             <span><!--orders count--></span>
         </a>
     </div>
-    <div>
-        <img src="null" width="70" height="70" alt=""/>
-        <img src="null" width="70" height="70" alt=""/>
-        <img src="null" width="70" height="70" alt=""/>
+    <div class="share">
+        <img src="icon/instagram.svg" width="70" height="70" alt=""/>
+        <img src="icon/facebook.svg" width="70" height="70" alt=""/>
+        <img src="icon/twitter.svg" width="70" height="70" alt=""/>
     </div>
 </footer>
 </body>

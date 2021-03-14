@@ -6,101 +6,128 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style/index.css"/>
+    <link rel="stylesheet" href="style/bag.css"/>
 </head>
 <body>
-<header>
-    <img src="null" width="170" height="170" alt="Brendle logo"/>
-    <a href="about.html">About us</a>
-    <a href="contacts.html">Contacts</a>
-    <a href="collections.html">Collections</a>
-    <a href="catalogue.html">Catalogue</a>
-    <a href="bag.html">
-        <img src="null" width="70" height="70" alt=""/>
+<header class="header">
+    <a href="main.html">
+        <img src="icon/logo.svg" width="170" height="170" alt="Brendle logo"/>
+    </a>
+    <div class="ml-3 mr-3">
+        <a href="about.html">About us</a>
+        <a class="ml-5" href="contacts.html">Contacts</a>
+        <a class="ml-5" href="collections.html">Collections</a>
+        <a class="ml-5" href="catalogue.html">Catalogue</a>
+    </div>
+    <a class="bag" href="bag.html">
+        <img src="icon/shopping-bag.svg" width="70" height="70" alt=""/>
         <span>3</span>
     </a>
 </header>
+<div class="breadcrumbs">
+    <a href="main.html">Home / </a><a href="catalogue.html">Catalogue / </a><span>Bag</span>
+</div>
 
-<a href="main.html">Home/</a><a href="catalogue.html">Catalogue/</a><span>Bag</span>
 
-<div>
-    <img src="null" width="200" height="200" alt="White Strawberry"/>
-    <div>
-        <h3>White Strawberry</h3>
-        <h3>White</h3>
+<div class="bag-cards px-horizontal">
+    <div class="bag-card"><!--One card-->
+        <img class="white-strawberry" width="200" height="200" src="image/candles/white-strawberry.jpg"
+             alt="White Strawberry candle"/>
+        <div class="titles">
+            <h3>White Strawberry</h3>
+            <p class="font-light font-size-24 mt-0">White</p>
+        </div>
+        <div class="count">
+            <img class="my-auto mx-1 rotate-180" src="icon/count-arrow-horizontal.svg" alt/>
+            <span>2</span>
+            <img class="my-auto mx-1 " src="icon/count-arrow-horizontal.svg" alt/>
+        </div>
+        <div class="price d-flex my-auto">
+            <b class="font-size-24">£40.00</b>
+            <span class="sale-price">£48.00</span>
+        </div>
     </div>
-    <div>
-        <img src="null" width="40" height="40" alt=""/>
-        <span>2</span>
-        <img src="null" width="40" height="40" alt=""/>
+    <div class="bag-card"><!--One card-->
+        <img class="white-strawberry" width="200" height="200" src="image/candles/green-apple.jpg"
+             alt="White Strawberry candle"/>
+        <div class="titles">
+            <h3>Green Apple</h3>
+            <p class="font-light font-size-24 mt-0">White</p>
+        </div>
+        <div class="count">
+            <img class="my-auto mx-1 rotate-180" src="icon/count-arrow-horizontal.svg" alt/>
+            <span>2</span>
+            <img class="my-auto mx-1 " src="icon/count-arrow-horizontal.svg" alt/>
+        </div>
+        <div class="price d-flex my-auto">
+            <b class="font-size-24">£24.00</b>
+            <span class="sale-price"></span>
+        </div>
     </div>
-    <div>
-        <span>£40.00</span><img src="null" width="20" height="20" alt=""/>
-        <p>£48.00</p>
+    <div class="bag-card"><!--One card-->
+        <img class="white-strawberry" width="200" height="200" src="image/candles/mandarin.jpg"
+             alt="White Strawberry candle"/>
+        <div class="titles">
+            <h3>Mandarin</h3>
+            <p class="font-light font-size-24 mt-0">White</p>
+        </div>
+        <div class="count">
+            <img class="my-auto mx-1 rotate-180" src="icon/count-arrow-horizontal.svg" alt/>
+            <span>2</span>
+            <img class="my-auto mx-1 " src="icon/count-arrow-horizontal.svg" alt/>
+        </div>
+        <div class="price d-flex my-auto">
+            <b class="font-size-24">£24.00</b>
+            <span class="sale-price"></span>
+        </div>
     </div>
 </div>
-<div>
-    <img src="null" width="200" height="200" alt="Green Apple"/>
-    <div>
-        <h3>Green Apple</h3>
-        <h3>White</h3>
-    </div>
-    <div>
-        <img src="null" width="40" height="40" alt=""/>
-        <span>1</span>
-        <img src="null" width="40" height="40" alt=""/>
-    </div>
-    <div>
-        <span>£24.00</span><img src="null" width="20" height="20" alt=""/>
-        <p><!--Sale--></p>
-    </div>
-</div>
-<div>
-    <img src="null" width="200" height="200" alt="Mandarin"/>
-    <div>
-        <h3>Mandarin</h3>
-        <h3>White</h3>
-    </div>
-    <div>
-        <img src="null" width="40" height="40" alt=""/>
-        <span>1</span>
-        <img src="null" width="40" height="40" alt=""/>
-    </div>
-    <div>
-        <span>£24.00</span><img src="null" width="20" height="20" alt=""/>
-        <p><!--Sale--></p>
-    </div>
-</div>
-<hr/>
-<div>
+
+<hr class="mt-4 mx-horizontal"/>
+
+<div class="result font-size-24 mt-3 mx-horizontal">
     <div>
         <span>Items: </span><span>3</span>
     </div>
-    <div>
+    <div></div>
+    <div class="text-center">
         <span>Amount: </span><span>4</span>
     </div>
     <div>
         <span>Total: </span><span>£88</span>
     </div>
 </div>
-
-<button type="button" name="Continue">Continue</button>
+<div class="continue">
+    <button class="btn btn-outlined"
+            type="button"
+            name="Continue"
+            onclick="window.location.href='order_info.html'">Continue
+    </button>
+</div>
 
 <footer>
-    <div>
-        <img src="null" width="170" height="170" alt="Brendle logo"/>
-        <a href="about.html">About us</a>
-        <a href="contacts.html">Contacts</a>
-        <a href="collections.html">Collections</a>
-        <a href="catalogue.html">Catalogue</a>
-        <a href="bag.html">
-            <img src="null" width="70" height="70" alt=""/>
+    <div class="header">
+        <a href="main.html">
+            <img src="icon/logo.svg" width="170" height="170" alt="Brendle logo"/>
+        </a>
+        <div class="ml-3 mr-3">
+            <a href="about.html">About us</a>
+            <a class="ml-5" href="contacts.html">Contacts</a>
+            <a class="ml-5" href="collections.html">Collections</a>
+            <a class="ml-5" href="catalogue.html">Catalogue</a>
+        </div>
+        <a class="bag" href="bag.html">
+            <img src="icon/shopping-bag.svg" width="70" height="70" alt=""/>
             <span>3</span>
         </a>
     </div>
-    <div>
-        <img src="null" width="70" height="70" alt=""/>
-        <img src="null" width="70" height="70" alt=""/>
-        <img src="null" width="70" height="70" alt=""/>
+    <div class="share">
+        <img src="icon/instagram.svg" width="70" height="70" alt=""/>
+        <img src="icon/facebook.svg" width="70" height="70" alt=""/>
+        <img src="icon/twitter.svg" width="70" height="70" alt=""/>
     </div>
 </footer>
 </body>

@@ -6,55 +6,72 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style/index.css"/>
+    <link rel="stylesheet" href="style/collections.css"/>
 </head>
 <body>
-<header>
-    <img src="null" width="170" height="170" alt="Brendle logo"/>
-    <a href="about.html">About us</a>
-    <a href="contacts.html">Contacts</a>
-    <a href="collections.html">Collections</a>
-    <a href="catalogue.html">Catalogue</a>
-    <a href="bag.html">
-        <img src="null" width="70" height="70" alt=""/>
+<header class="header">
+    <a href="main.html">
+        <img src="icon/logo.svg" width="170" height="170" alt="Brendle logo"/>
+    </a>
+    <div class="ml-3 mr-3">
+        <a href="about.html">About us</a>
+        <a class="ml-5" href="contacts.html">Contacts</a>
+        <a class="ml-5" href="collections.html">Collections</a>
+        <a class="ml-5" href="catalogue.html">Catalogue</a>
+    </div>
+    <a class="bag" href="bag.html">
+        <img src="icon/shopping-bag.svg" width="70" height="70" alt=""/>
         <span><!--orders count--></span>
     </a>
 </header>
 
-<a href="main.html">Home/</a><span>Collections</span>
+<div class="breadcrumbs">
+    <a href="main.html">Home / </a><span>Collections</span>
+</div>
 
-<div>
-    <div>
-        <img src="null" width="470" height="450" alt="White collection"/>
-        <div>
-            <h3>One Wicked Candles</h3>
-            <h3>White</h3>
-            <p>
-                Explore a new world of soft aromas from our collection SOFT filled with cotton, sea salt, mint and leaves.
-                Relax with the help of candles that will create the best atmosphere in your house
+<div class="collections">
+    <img class="collection-image one-wicked-candle-white"
+         src="image/home/one-wicked-candle-white.jpg"
+         width="470"
+         height="450"
+         alt="White collection"/>
+    <div class="d-flex flex-row">
+        <div class="description-container white">
+            <h3 class="my-0">One Wicked Candles</h3>
+            <h3 class="mt-0 font-light">White</h3>
+            <p class="mb-5">
+                Candles from this collection will help you find a feeling of white christmas even when there is no
+                snow around.
+                Fresh and at the same time majestic aromas will fill your house in seconds creating fantastic
+                holiday mood
             </p>
-            <a href="collections.html">Buy all</a>
+            <a class="btn btn-outlined" href="collections.html">Buy All</a>
         </div>
-        <div><!--Pagination vertical-->
-            <img src="null" width="20" height="20" alt=""/>
-            <img src="null" width="20" height="20" alt=""/>
-            <img src="null" width="20" height="20" alt=""/>
-            <img src="null" width="20" height="20" alt=""/>
-            <img src="null" width="20" height="20" alt=""/>
+        <div class="pagination d-flex flex-column white pr-3">
+            <span class="page-dot white active"></span>
+            <span class="page-dot white"></span>
+            <span class="page-dot white"></span>
+            <span class="page-dot white"></span>
+            <span class="page-dot white"></span>
         </div>
-    </div>
-    <div>
-        <img src="null" width="70" height="220" alt=""/>
-        <img src="null" width="70" height="220" alt=""/>
+
+        <div class="arrows-vertical d-flex flex-column">
+            <div class="rotate-180 background-inactive"></div>
+            <div></div>
+        </div>
     </div>
 </div>
 
-<div>
-    <div class="product-card"><!--One card-->
-        <img src="null" width="270" height="320" alt="White Strawberry candle"/>
+<div class="products-grid-4 mt-10"><!--Cards-->
+    <a href="product.html" class="product-card"><!--One card-->
+        <img class="mb-2 white-strawberry" src="image/candles/white-strawberry.jpg" alt="White Strawberry candle"/>
         <b>WHITE STRAWBERRY</b>
-        <p>WHITE</p>
-        <div>
-            <p>£20.00</p>
+        <p class="font-light mt-0">White</p>
+        <div class="d-flex mt-4">
+            <b class="font-size-24">£24.00</b>
             <span class="sale-price"><!--sale price--></span>
         </div>
         <div class="count-container d-flex mt-5">
@@ -65,14 +82,14 @@
             </div>
             <button class="btn thin-border" type="button">ADD</button>
         </div>
-    </div>
-    <div class="product-card"><!--One card-->
-        <img src="null" width="270" height="320" alt="Snowy Morning candle"/>
+    </a>
+    <a href="product.html" class="product-card"><!--One card-->
+        <img class="mb-2 snowy-morning" src="image/candles/snowy-morning.jpg" alt="Snowy Morning candle"/>
         <b>Snowy Morning</b>
-        <p>WHITE</p>
-        <div>
-            <p>£20.00</p>
-            <p>£24.00</p>
+        <p class="font-light mt-0">White</p>
+        <div class="d-flex mt-4">
+            <b class="font-size-24">£24.00</b>
+            <span class="sale-price">£29.99</span>
         </div>
         <div class="count-container d-flex mt-5">
             <div class="d-flex w-100 thin-border">
@@ -82,14 +99,14 @@
             </div>
             <button class="btn thin-border" type="button">ADD</button>
         </div>
-    </div>
-    <div class="product-card"><!--One card-->
-        <img src="null" width="270" height="320" alt="Mandarin candle"/>
+    </a>
+    <a href="product.html" class="product-card"><!--One card-->
+        <img class="mb-2" src="image/candles/mandarin.jpg" alt="Mandarin candle"/>
         <b>Mandarin</b>
-        <p>WHITE</p>
-        <div>
-            <p>£24.00</p>
-            <span class="sale-price"><!--sale price--></span>
+        <p class="font-light mt-0">White</p>
+        <div class="d-flex mt-4">
+            <b class="font-size-24">£24.00</b>
+            <span class="sale-price"></span>
         </div>
         <div class="count-container d-flex mt-5">
             <div class="d-flex w-100 thin-border">
@@ -99,14 +116,14 @@
             </div>
             <button class="btn thin-border" type="button">ADD</button>
         </div>
-    </div>
-    <div class="product-card"><!--One card-->
-        <img src="null" width="270" height="320" alt="Cinnamon&Nuts candle"/>
-        <b>Cinnamon&Nuts</b>
-        <p>WHITE</p>
-        <div>
-            <p>£20.00</p>
-            <p>£24.00</p>
+    </a>
+    <a href="product.html" class="product-card"><!--One card-->
+        <img class="mb-2" src="image/candles/cinnamon&nuts.jpg" alt="Cinnamon and nuts candle"/>
+        <b>Cinnamon&nuts</b>
+        <p class="font-light mt-0">White</p>
+        <div class="d-flex mt-4">
+            <b class="font-size-24">£24.00</b>
+            <span class="sale-price"></span>
         </div>
         <div class="count-container d-flex mt-5">
             <div class="d-flex w-100 thin-border">
@@ -116,14 +133,14 @@
             </div>
             <button class="btn thin-border" type="button">ADD</button>
         </div>
-    </div>
-    <div class="product-card"><!--One card-->
-        <img src="null" width="270" height="320" alt="Green Apple candle"/>
+    </a>
+    <a href="product.html" class="product-card"><!--One card-->
+        <img class="mb-2" src="image/candles/green-apple.jpg" alt="Green Apple candle"/>
         <b>Green Apple</b>
-        <p>WHITE</p>
-        <div>
-            <p>£24.00</p>
-            <span class="sale-price"><!--sale price--></span>
+        <p class="font-light mt-0">White</p>
+        <div class="d-flex mt-4">
+            <b class="font-size-24">£24.00</b>
+            <span class="sale-price"></span>
         </div>
         <div class="count-container d-flex mt-5">
             <div class="d-flex w-100 thin-border">
@@ -133,37 +150,41 @@
             </div>
             <button class="btn thin-border" type="button">ADD</button>
         </div>
-    </div>
+    </a>
 </div>
 
-<div>
-    <img src="null" width="220" height="70" alt=""/>
-    <div><!--Pagination-->
-        <img src="null" width="20" height="20" alt=""/>
-        <img src="null" width="20" height="20" alt=""/>
-        <img src="null" width="20" height="20" alt=""/>
-        <img src="null" width="20" height="20" alt=""/>
-        <img src="null" width="20" height="20" alt=""/>
+<div class="arrows-horizontal mt-4">
+    <div class="rotate-180 background-inactive"></div>
+    <div class="d-flex">
+        <span class="page-dot orange active"></span>
+        <span class="page-dot orange"></span>
+        <span class="page-dot orange"></span>
+        <span class="page-dot orange"></span>
+        <span class="page-dot orange"></span>
     </div>
-    <img src="null" width="220" height="70" alt=""/>
+    <div></div>
 </div>
 
 <footer>
-    <div>
-        <img src="null" width="170" height="170" alt="Brendle logo"/>
-        <a href="about.html">About us</a>
-        <a href="contacts.html">Contacts</a>
-        <a href="collections.html">Collections</a>
-        <a href="catalogue.html">Catalogue</a>
-        <a href="bag.html">
-            <img src="null" width="70" height="70" alt=""/>
+    <div class="header">
+        <a href="main.html">
+            <img src="icon/logo.svg" width="170" height="170" alt="Brendle logo"/>
+        </a>
+        <div class="ml-3 mr-3">
+            <a href="about.html">About us</a>
+            <a class="ml-5" href="contacts.html">Contacts</a>
+            <a class="ml-5" href="collections.html">Collections</a>
+            <a class="ml-5" href="catalogue.html">Catalogue</a>
+        </div>
+        <a class="bag" href="bag.html">
+            <img src="icon/shopping-bag.svg" width="70" height="70" alt=""/>
             <span><!--orders count--></span>
         </a>
     </div>
-    <div>
-        <img src="null" width="70" height="70" alt=""/>
-        <img src="null" width="70" height="70" alt=""/>
-        <img src="null" width="70" height="70" alt=""/>
+    <div class="share">
+        <img src="icon/instagram.svg" width="70" height="70" alt=""/>
+        <img src="icon/facebook.svg" width="70" height="70" alt=""/>
+        <img src="icon/twitter.svg" width="70" height="70" alt=""/>
     </div>
 </footer>
 </body>
