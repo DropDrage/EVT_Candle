@@ -1,6 +1,6 @@
 
 .news-container {
-	background: #025959 url(../image/home/home-big.jpg); /*ToDo define color*/
+	background: #025959 url(../image/home/home-big.jpg);
 	background-size: cover;
 	height: 37.5rem;
 }
