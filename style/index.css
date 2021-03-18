@@ -300,6 +300,10 @@ input[type="submit"] {
 }
 
 
+.pr-3 {
+	padding-right: 1.875rem !important;
+}
+
 .px-horizontal {
 	padding: 0 var(--padding-horizontal);
 }
