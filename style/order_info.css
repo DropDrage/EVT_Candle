@@ -28,6 +28,10 @@ form p {
 	position: relative;
 }
 
+.material-input input:focus {
+	border-bottom: 1px solid #FAC9AC;
+}
+
 .material-input input {
 	width: 100%;
 	border: none;
@@ -72,6 +76,11 @@ form p {
 .ordered-product .label {
 	width: 100%;
 	margin-left: 1.875rem;
+	transition: .3s color ease;
+}
+
+.ordered-product .label:hover {
+	color: var(--accent-color);
 }
 
 .ordered-product h4 {
@@ -89,6 +98,7 @@ form p {
 }
 
 .ordered-product .price .sale-price {
+	color: var(--secondary-text-color);
 	text-decoration-line: line-through;
 }
 

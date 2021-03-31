@@ -15,14 +15,14 @@
 	justify-content: space-between;
 }
 
-.product-info-card .add-to-bag {
-	width: 16.25rem;
-}
-
 .product-info-card .count {
 	width: 4.375rem;
 	height: 4.375rem;
 	align-items: center;
+}
+
+.product-info-card .count img {
+	cursor: pointer;
 }
 
 .product-info-card .count > p {

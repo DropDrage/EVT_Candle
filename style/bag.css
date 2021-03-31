@@ -33,6 +33,10 @@
 	width: 100%;
 }
 
+.count img {
+	cursor: pointer;
+}
+
 .count span {
 	width: 100%;
 	text-align: center;

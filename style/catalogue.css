@@ -16,16 +16,54 @@
 	width: 20rem;
 }
 
+.filter input[type="checkbox"] {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+}
+
+.filter input[type="checkbox"] + label {
+	display: inline-flex;
+	align-items: center;
+	user-select: none;
+	transition: .3s color ease;
+	cursor: pointer;
+}
+
+.filter input[type="checkbox"] + label::before {
+	content: '';
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	flex-shrink: 0;
+	flex-grow: 0;
+	border: 1px solid #adb5bd;
+	margin-right: 0.5em;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 50% 50%;
+}
+
+.filter input[type="checkbox"]:checked + label::before {
+	border-color: var(--primary-dark-color);
+	background-color: var(--primary-dark-color);
+}
+
+.filter label:hover {
+	color: var(--accent-color);
+}
+
+
 .filter label {
 	font-size: 1.125rem;
-	line-height: 22px;
+	line-height: 1.375rem;
 }
 
 .filter p {
 	font-style: normal;
 	font-weight: 300;
-	font-size: 24px;
-	line-height: 29px;
+	font-size: 1.5rem;
+	line-height: 1.875rem;
 }
 
 .filter div:not(:last-child) {
