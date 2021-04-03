@@ -24,12 +24,15 @@ form p {
 
 
 .material-input {
-	border-bottom: 1px solid var(--inactive-color);
 	position: relative;
 }
 
+.material-input input {
+	border-bottom: 1px solid var(--inactive-color) !important;
+}
+
 .material-input input:focus {
-	border-bottom: 1px solid #FAC9AC;
+	border-bottom: 1px solid var(--primary-dark-color) !important;
 }
 
 .material-input input {
@@ -53,7 +56,10 @@ form p {
 }
 
 .material-input input:focus + label::before {
-	color: var(--primary-text-color);
+	color: var(--primary-dark-color);
+}
+
+.material-input .active + label::before {
 	transform: translateY(-175%);
 }
 

@@ -27,6 +27,10 @@
 
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4oeAJdsoSBc648LcNPU6AzOOtNBAXJGw&callback=initMap&libraries=&v=weekly"
             async></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="src/index.js"></script>
+    <script src="src/contacts.js"></script>
 </head>
 <body>
 <header class="header">
@@ -62,8 +66,8 @@
     <input class="mb-2" type="text" placeholder="Full Name" name="fullName"/>
     <textarea class="mb-3" placeholder="Your Message" name="message"></textarea>
 
-    <a class="btn btn-outlined btn-large">
-        <input class="btn my-0" type="submit" value="Contact"/>
+    <a id="btn-contact" class="btn btn-outlined btn-large disabled">
+        <input class="btn disabled my-0" type="submit" value="Contact"/>
     </a>
 </form>
 

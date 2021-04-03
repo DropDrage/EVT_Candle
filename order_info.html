@@ -9,6 +9,10 @@
 
     <link rel="stylesheet" href="style/index.css"/>
     <link rel="stylesheet" href="style/order_info.css"/>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="src/index.js"></script>
+    <script src="src/orderInfo.js"></script>
 </head>
 <body>
 <header class="header">
@@ -49,11 +53,11 @@
                 </div>
 
                 <div class="material-input">
-                    <input id="email" type="text" name="email"/>
+                    <input id="email" type="email" name="email"/>
                     <label for="email" data-placeholder="Email"></label>
                 </div>
                 <div class="material-input">
-                    <input id="phone" type="text" name="phone"/>
+                    <input id="phone" type="number" name="phone"/>
                     <label for="phone" data-placeholder="Phone"></label>
                 </div>
 
@@ -134,8 +138,8 @@
         </div>
     </div>
 
-    <div class="btn btn-outlined btn-large btn-primary disabled mx-auto d-block">
-        <input class="text-uppercase disabled my-0" type="submit" value="Continue"/>
+    <div id="btn-continue" class="btn btn-outlined btn-large btn-primary disabled mx-auto d-block">
+        <input class="btn text-uppercase disabled my-0" type="submit" value="Continue"/>
     </div>
 </form>
 

@@ -190,6 +190,11 @@ input[type="submit"] {
 	margin: 1.25rem 0;
 }
 
+input[type="submit"]:focus {
+	border: none;
+	outline: none;
+}
+
 
 .breadcrumbs {
 	display: flex;
