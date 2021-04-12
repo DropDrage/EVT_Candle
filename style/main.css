@@ -10,7 +10,7 @@
 }
 
 .news-container > div {
-	display: table;
+	/*display: table;*/
 	height: 100%;
 	margin: 0 var(--padding-horizontal);
 	padding: 7.5rem 0 5rem;
@@ -29,6 +29,11 @@
 
 .news-container img {
 	visibility: hidden;
+}
+
+
+.news-container .description-container a {
+	margin: 0 auto;
 }
 
 
