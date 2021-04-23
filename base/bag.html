@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style/index.css"/>
+    <link rel="stylesheet" href="style/bag.css"/>
+</head>
+<body>
+<div class="breadcrumbs">
+    <a href="main.html">Home / </a><a href="catalogue.html">Catalogue / </a><span>Bag</span>
+</div>
+
+
+<div class="bag-cards px-horizontal">
+    {% include 'components/bag_card.html' with {
+    'class': 'white-strawberry', src: 'image/candles/white-strawberry.jpg', alt: 'White Strawberry candle', name:'White Strawberry',
+    type: 'White', price: '40.00', sale_price: '£48.00', 'count': '2'} %}
+
+    {% include 'components/bag_card.html' with {
+    'class': 'green-apple', src: 'image/candles/green-apple.jpg', alt: 'Green Apple candle', name:'Green Apple',
+    type: 'White', price: '24.00', sale_price: '', 'count': '2'} %}
+
+    {% include 'components/bag_card.html' with {
+    'class': 'mandarin', src: 'image/candles/mandarin.jpg', alt: 'Mandarin candle', name:'Mandarin',
+    type: 'White', price: '24.00', sale_price: '', 'count': '2'} %}
+</div>
+
+<hr class="mt-4 mx-horizontal"/>
+
+{% include 'components/orderResult.html' with {
+'total': '88', 'amount': '6', 'items': '3'} %}
+
+{{ include ('components/continueButton.html') }}
+
+</body>
+</html>

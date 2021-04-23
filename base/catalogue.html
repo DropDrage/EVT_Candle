@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style/index.css"/>
+    <link rel="stylesheet" href="style/catalogue.css"/>
+</head>
+<body>
+
+{% include 'components/breadcrumbs.html' with {'page': 'Catalogue'} %}
+
+<div class="d-flex flex-row container-catalog">
+    {% include 'components/filters.html' %}
+
+    <div class="products-grid-3"><!--Cards-->
+        {% include 'components/oneCard.html' with {
+        'class': 'cinnamon-nuts', src: 'image/candles/cinnamon&nuts.jpg', alt: 'Cinnamon&Nuts candle', name:'CINNAMON&NUTS',
+        type: 'White', price: '20.00', sale_price: '£24.00'} %}
+
+        {% include 'components/oneCard.html' with {
+        'class': 'appalechia', src: 'image/candles/appalechia.jpg', alt: 'Appalechia candle', name:'APPALECHIA',
+        type: 'Calm', price: '24.00', sale_price: ''} %}
+
+        {% include 'components/oneCard.html' with {
+        'class': 'green-apple', src: 'image/candles/green-apple.jpg', alt: 'Green Apple candle', name:'GREEN APPLE',
+        type: 'White', price: '24.00', sale_price: ''} %}
+
+        {% include 'components/oneCard.html' with {
+        'class': 'pine-forrest', src: 'image/candles/pine-forrest.jpg', alt: 'Pine Forest candle', name:'PINE FOREST',
+        type: 'Calm', price: '24.00', sale_price: '£29.99'} %}
+
+        {% include 'components/oneCard.html' with {
+        'class': 'mandarin', src: 'image/candles/mandarin.jpg', alt: 'Mandarin candle', name:'MANDARIN',
+        type: 'White', price: '24.00', sale_price: ''} %}
+
+        {% include 'components/oneCard.html' with {
+        'class': 'french-cotton', src: 'image/candles/mandarin.jpg', alt: 'French Cotton candle', name:'FRENCH COTTON',
+        type: 'Soft', price: '24.00', sale_price: ''} %}
+
+        {% include 'components/oneCard.html' with {
+        'class': 'white-strawberry', src: 'image/candles/white-strawberry.jpg', alt: 'White Strawberry candle"', name:'WHITE STRAWBERRY',
+        type: 'White', price: '24.00', sale_price: ''} %}
+
+        {% include 'components/oneCard.html' with {
+        'class': 'rose-white-musk', src: 'image/candles/rose&white-musk.jpg', alt: 'Rose and musk candle', name:'ROSE & WHITE MUSK',
+        type: 'Soft', price: '24.00', sale_price: ''} %}
+
+        {% include 'components/oneCard.html' with {
+        'class': 'snowy-morning', src: 'image/candles/snowy-morning.jpg', alt: 'Snowy Morning candle', name:'SNOWY MORNING',
+        type: 'White', price: '24.00', sale_price: ''} %}
+    </div>
+</div>
+
+{% include 'components/paginator.html' %}
+
+</body>
+</html>

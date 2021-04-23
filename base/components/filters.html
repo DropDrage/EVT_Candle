@@ -1,0 +1,17 @@
+<div class="filter"><!--Filter-->
+  <p class="mb-3">FRAGRANCE TYPE</p>
+  {% include 'components/checkboxForFilter.html' with {
+  id: 'fresh-and-Clean', name: 'Fresh and clean', 'count': '5'} %}
+
+  {% include 'components/checkboxForFilter.html' with {
+  'id': 'floral', 'name': 'Floral', 'count': '11'} %}
+
+  {% include 'components/checkboxForFilter.html' with {
+  'id': 'citrus', 'name': 'Citrus', 'count': '12'} %}
+
+  {% include 'components/checkboxForFilter.html' with {
+  'id': 'fruity', 'name': 'Fruity', 'count': '15'} %}
+
+  {% include 'components/checkboxForFilter.html' with {
+  'id': 'woody', 'name': 'Woody', 'count': '7'} %}
+</div>

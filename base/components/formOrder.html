@@ -1,0 +1,104 @@
+<form class="px-horizontal">
+  <div class="mb-7">
+    <div>
+      <h3 class="font-light mb-4">CONTACT INFORMATION</h3>
+      <div class="contact-information">
+        <div class="material-input">
+          <input id="first-name" type="text" name="firstName"/>
+          <label for="first-name" data-placeholder="First Name"></label>
+        </div>
+        <div class="material-input">
+          <input id="last-name" type="text" name="lastName"/>
+          <label for="last-name" data-placeholder="Last Name"></label>
+        </div>
+
+        <div class="material-input">
+          <input id="email" type="email" name="email"/>
+          <label for="email" data-placeholder="Email"></label>
+        </div>
+        <div class="material-input">
+          <input id="phone" type="number" name="phone"/>
+          <label for="phone" data-placeholder="Phone"></label>
+        </div>
+
+        <div class="material-input">
+          <input id="country" type="text" name="country"/>
+          <label for="country" data-placeholder="Country"></label>
+        </div>
+        <div class="material-input">
+          <input id="city" type="text" name="city"/>
+          <label for="city" data-placeholder="City"></label>
+        </div>
+
+        <div class="material-input">
+          <input id="address" type="text" name="address"/>
+          <label for="address" data-placeholder="Address"></label>
+        </div>
+        <div class="material-input">
+          <input id="zipcode" type="text" name="zipcode"/>
+          <label for="zipcode" data-placeholder="Zipcode"></label>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h3 class="font-light mb-4">ORDER INFORMATION</h3>
+      <a href="product.php" class="ordered-product mb-3">
+        <img class="snowy-morning"
+             src="image/candles/snowy-morning.jpg"
+             alt="White Strawberry candle miniature"/>
+        <div class="label">
+          <h4>White Strawberry (2)</h4>
+          <h4 class="font-light">White</h4>
+        </div>
+        <div class="price">
+          <h4>£40.00</h4>
+          <h5 class="sale-price">£48.00</h5>
+        </div>
+      </a>
+      <a href="product.php" class="ordered-product mb-3">
+        <img class="green-apple" src="image/candles/green-apple.jpg" alt="Green Apple candle miniature"/>
+        <div class="label">
+          <h4>Green Apple</h4>
+          <h4 class="font-light">White</h4>
+        </div>
+        <div class="price">
+          <h4>£24.00</h4>
+          <h5 class="sale-price"><!--sale price--></h5>
+        </div>
+      </a>
+      <a href="product.php" class="ordered-product mb-3">
+        <img class="mandarin" src="image/candles/mandarin.jpg" alt="Mandarin candle miniature"/>
+        <div class="label">
+          <h4>Mandarin</h4>
+          <h4 class="font-light">White</h4>
+        </div>
+        <div class="price">
+          <h4>£24.00</h4>
+          <h5 class="sale-price"><!--sale price--></h5>
+        </div>
+      </a>
+
+      <hr class="mb-2"/>
+
+      <div class="d-flex mb-2">
+        <p class="w-100 font-light">Subtotal: </p>
+        <p class="font-bold text-color-secondary">£88.00</p>
+      </div>
+      <div class="d-flex mb-2">
+        <p class="w-100 font-light">Shipping: </p>
+        <p class="font-bold text-color-secondary">£8.00</p>
+      </div>
+
+      <hr class="mb-3"/>
+
+      <div class="d-flex">
+        <h3 class="w-100 text-uppercase font-light my-0">Total: </h3>
+        <h3 class="font-bold my-0">£96.00</h3>
+      </div>
+    </div>
+  </div>
+
+  <div id="btn-continue" class="btn btn-outlined btn-large btn-primary disabled mx-auto d-block">
+    <input class="btn text-uppercase disabled my-0" type="submit" value="Continue"/>
+  </div>
+</form>

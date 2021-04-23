@@ -1,0 +1,20 @@
+<a href="product.php" class="product-card"><!--One card-->
+  <div class="product-card-img">
+    <img class=`mb-2 {{class}}` src={{src}}
+         alt={{alt}}/>
+  </div>
+  <b>{{name}}</b>
+  <p class="font-light mt-0">{{type}}</p>
+  <div class="d-flex mt-4">
+    <b class="font-size-24">£{{price}}</b>
+    <span class="sale-price">{{sale_price}}</span>
+  </div>
+  <div class="count-container d-flex mt-5">
+    <div class="d-flex w-100 thin-border">
+      <img class="my-auto mx-1 rotate-180" src="icon/count-arrow-horizontal.svg" alt/>
+      <p>1</p>
+      <img class="my-auto mx-1" src="icon/count-arrow-horizontal.svg" alt/>
+    </div>
+    <button class="btn thin-border" type="button">ADD</button>
+  </div>
+</a>

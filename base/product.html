@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style/index.css"/>
+    <link rel="stylesheet" href="style/product.css"/>
+</head>
+<body>
+
+
+{% include 'components/breadcrumbs.html' with {'page':'Catalogue / White Strawberry'} %}
+
+{{ include ('components/productInfo.html') }}
+
+{{ include ('components/product_description.html') }}
+
+<h2 class="mx-horizontal mt-10 mb-5 text-uppercase">Related Products</h2>
+<div class="products-grid-4">
+    {% include 'components/oneCard.html' with {
+    'class': 'white-strawberry', src: 'image/candles/white-strawberry.jpg', alt: 'White Strawberry candle"', name:'WHITE STRAWBERRY',
+    type: 'White', price: '24.00', sale_price: ''} %}
+
+    {% include 'components/oneCard.html' with {
+    'class': 'mandarin', src: 'image/candles/mandarin.jpg', alt: 'Mandarin candle', name:'MANDARIN',
+    type: 'White', price: '24.00', sale_price: ''} %}
+
+    {% include 'components/oneCard.html' with {
+    'class': 'cinnamon-nuts', src: 'image/candles/cinnamon&nuts.jpg', alt: 'Cinnamon&Nuts candle', name:'CINNAMON&NUTS',
+    type: 'White', price: '20.00', sale_price: '£24.00'} %}
+
+    {% include 'components/oneCard.html' with {
+    'class': 'green-apple', src: 'image/candles/green-apple.jpg', alt: 'Green Apple candle', name:'GREEN APPLE',
+    type: 'White', price: '24.00', sale_price: ''} %}
+</div>
+
+{% include 'components/paginator.html' %}
+
+</body>
+</html>
